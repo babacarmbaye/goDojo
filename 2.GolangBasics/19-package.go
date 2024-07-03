@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"golangBasics/shapes"
+
+	"github.com/google/uuid"
 )
 
 func main() {
@@ -20,4 +22,7 @@ func main() {
 
 	// perimeterOfSquare := shapes.perimeterOfSquare(size)
 	// fmt.Println("perimeterOfSquare =", perimeterOfSquare)
+
+	id := uuid.New()
+	fmt.Println("Generated ID: ", id)
 }
