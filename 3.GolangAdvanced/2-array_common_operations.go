@@ -32,4 +32,16 @@ func main() {
 	isCopiedEqual := originArray == copiedArray
 	fmt.Println("Are original and copied arrays equal ?", isCopiedEqual)
 
+	// Define an array of integers
+	numbers := [5]int{10, 20, 30, 40, 50}
+	// Using a traditional for loop to iterate over the array
+	fmt.Println("Iterating using traditional for loop")
+	for i := 0; i < len(numbers); i++ {
+		fmt.Printf("Index: %d, Value: %d \n", i, numbers[i])
+	}
+	// Using a range loop to iterate over the array
+	fmt.Println("Iterating using range loop")
+	for index, value := range numbers {
+		fmt.Printf("Index: %d, Value: %d \n", index, value)
+	}
 }
