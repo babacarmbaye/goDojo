@@ -9,7 +9,6 @@ import (
 func main() {
 	// Create or open the file
 	file, err := os.OpenFile("output.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-	fmt.Println("------file: ", file)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to open file: %s\n", err)
 		return
